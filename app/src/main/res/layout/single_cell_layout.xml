@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/calendar_date_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/selected_round_date_bg"
+        android:text="01"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/event_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        android:background="@drawable/layout_status_round"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/event_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="9sp" />
+    </LinearLayout>
+</LinearLayout>
